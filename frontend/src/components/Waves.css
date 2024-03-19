@@ -1,0 +1,32 @@
+.waves-container {
+    display: flex;
+    align-items: flex-end;
+    height: 200px; /* Adjust height as needed */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 50px;
+    z-index: 999;
+  }
+  
+  .wave {
+    flex: 1;
+    background-color: #ffffff; /* Change color as needed */
+    border-radius: 50%; /* Adjust border-radius to control wave shape */
+    margin: 0 5px;
+    animation: waveAnimation 1s infinite ease-in-out alternate; /* Adjust animation speed as needed */
+  }
+  
+  @keyframes waveAnimation {
+    0% {
+      transform: scaleY(0.1); /* Adjust initial scale to control wave height */
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(0.1);
+    }
+  }
+  
